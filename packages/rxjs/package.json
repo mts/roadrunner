@@ -1,0 +1,37 @@
+{
+  "name": "roadrunner-rxjs",
+  "version": "0.0.0",
+  "description": "Roadrunner RxJS",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --watch src/index.js --exec \"npm run build && node build/index.js\"",
+    "prebuild": "rimraf build",
+    "build": "babel src --out-dir build --copy-files",
+    "release": "npm publish",
+    "uninstall-packages": "rm -rf node_modules package-lock.json",
+    "install-packages": "npm install",
+    "reinstall-packages": "npm-run-all uninstall-packages install-packages",
+    "npm-update": "npm update",
+    "test": "jest -u --config jest.config.json --no-cache --silent --runInBand",
+    "test:watchChanged:silent": "jest -u --config jest.config.json --watch --onlyChanged --verbose",
+    "test:coverage": "jest --config jest.config.json --coverage --collectCoverageFrom=src/**/*.{js,jsx} --silent",
+    "lint:format": "npm-run-all lint format",
+    "lint": "npm-run-all lint:js:jsx",
+    "lint:js:jsx": "eslint --ext .js --ext .jsx src/ --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "ci": "npm-run-all lint:format build test"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "jest": "^24.7.1",
+    "nodemon": "^1.18.11",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.3",
+    "rxjs": "^6.4.0"
+  }
+}
