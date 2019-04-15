@@ -1,7 +1,7 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
 
 describe('Array', () => {
-  test('filter()', () => {
+  test('find()', () => {
     var array1 = [5, 12, 8, 130, 44]
 
     var found = array1.find(function(element) {
