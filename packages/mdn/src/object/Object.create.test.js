@@ -2,7 +2,7 @@
 
 /* eslint-disable no-console */
 
-describe('Array', () => {
+describe('Object', () => {
   let consoleLogSpy
 
   beforeEach(() => {

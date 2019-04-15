@@ -1,6 +1,6 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
 
-describe('Array', () => {
+describe('Object', () => {
   test('assign()', () => {
     const target = { a: 1, b: 2 }
     const source = { b: 4, c: 5 }
