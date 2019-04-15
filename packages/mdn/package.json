@@ -4,16 +4,6 @@
   "description": "Roadrunner MDN",
   "main": "index.js",
   "license": "MIT",
-  "files": [
-    "src"
-  ],
-  "keywords": [
-    "roadrunner mdn"
-  ],
-  "author": {
-    "name": "MTS",
-    "url": "https://github.com/mts"
-  },
   "scripts": {
     "start": "nodemon --watch src/index.js --exec \"npm run build && node build/index.js\"",
     "prebuild": "rimraf build",
