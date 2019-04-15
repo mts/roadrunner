@@ -13,6 +13,7 @@ describe('Object', () => {
     function deleteObjectProperty() {
       delete object1.property1
     }
+
     expect(deleteObjectProperty).toThrow("Cannot delete property 'property1' of #<Object>")
     expect(object1.property1).toEqual(33)
   })
