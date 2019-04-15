@@ -2,13 +2,13 @@
   "testRegex": ".test\\.js$",
   "roots": ["<rootDir>/src"],
   "transform": {
-    "^.+\\.jsx?$": "babel-jest"
+    "^.+\\.js?$": "babel-jest"
   },
   "collectCoverageFrom": ["packages/**/*.js", "packages/**/*.jsx"],
-  "coveragePathIgnorePatterns": ["node_modules", ".storybook", ".storybook-static", "asset", ".test.js", ".story.js", ".render.js"],
+  "coveragePathIgnorePatterns": ["node_modules", ".test.js"],
   "setupFilesAfterEnv": ["<rootDir>/jest.config.js"],
   "moduleNameMapper": {
     "\\.(css|less|scss)$": "identity-obj-proxy"
   },
-  "moduleFileExtensions": ["js", "jsx"]
+  "moduleFileExtensions": ["js"]
 }
