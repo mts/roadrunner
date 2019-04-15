@@ -7,6 +7,7 @@ describe('Array', () => {
 
   beforeEach(() => {
     consoleLogSpy = jest.fn(() => {})
+    jest.spyOn(console, 'log').mockImplementation(consoleLogSpy)
   })
 
   afterEach(() => {
@@ -15,8 +16,6 @@ describe('Array', () => {
 
   test('forEach()', () => {
     var array1 = ['a', 'b', 'c']
-
-    jest.spyOn(console, 'log').mockImplementation(consoleLogSpy)
 
     array1.forEach(function(element) {
       console.log(element)
