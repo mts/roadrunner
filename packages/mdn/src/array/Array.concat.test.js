@@ -1,7 +1,7 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
 
 describe('Array', () => {
-  test('isArray()', () => {
+  test('concat()', () => {
     var array1 = ['a', 'b', 'c']
     var array2 = ['d', 'e', 'f']
 
