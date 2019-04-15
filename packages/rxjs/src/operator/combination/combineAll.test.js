@@ -1,4 +1,5 @@
 // https://www.learnrxjs.io/operators/combination/combineall.html
+// https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/combineall-spec.ts
 
 import { take, map, combineAll } from 'rxjs/operators'
 import { interval } from 'rxjs'
