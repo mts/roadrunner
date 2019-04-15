@@ -1,0 +1,45 @@
+{
+  "name": "roadrunner-mdn",
+  "version": "0.0.0",
+  "description": "Roadrunner MDN",
+  "main": "index.js",
+  "license": "MIT",
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "roadrunner mdn"
+  ],
+  "author": {
+    "name": "MTS",
+    "url": "https://github.com/mts"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "serve": "npm start",
+    "prebuild": "rimraf build",
+    "build": "babel src --out-dir build --copy-files",
+    "release": "npm publish",
+    "uninstall-packages": "rm -rf node_modules package-lock.json",
+    "install-packages": "npm install",
+    "reinstall-packages": "npm-run-all uninstall-packages install-packages",
+    "npm-update": "npm update",
+    "test": "jest -u --config jest.config.json --no-cache --silent --runInBand",
+    "test:watchChanged:silent": "jest -u --config jest.config.json --watch --onlyChanged --verbose",
+    "test:coverage": "jest --config jest.config.json --coverage --collectCoverageFrom=src/**/*.{js,jsx} --silent",
+    "lint:format": "npm-run-all lint format",
+    "lint": "npm-run-all lint:js:jsx",
+    "lint:js:jsx": "eslint --ext .js --ext .jsx src/ --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "ci": "npm-run-all lint:format build test"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.4.3",
+    "nodemon": "^1.18.10",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.3"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
