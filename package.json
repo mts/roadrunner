@@ -57,7 +57,7 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "eslint": "^5.16.0",
-    "eslint-plugin-jest": "^22.5.0",
+    "eslint-plugin-jest": "^22.5.1",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
     "gh-pages": "^2.0.1",
@@ -83,7 +83,7 @@
     "stylelint-config-standard": "^18.2.0"
   },
   "dependencies": {
-    "husky": "^2.0.0",
-    "lerna": "^3.13.3"
+    "husky": "^2.1.0",
+    "lerna": "^3.13.4"
   }
 }
