@@ -16,16 +16,13 @@
     "npm-update": "lerna run npm-update",
     "bootstrap": "npm-run-all build lint:format test report-coverage",
     "lint:format": "npm-run-all lint format",
-    "lint": "npm-run-all lint:js:jsx lint:scss",
-    "lint:js:jsx": "eslint --ext .js --ext .jsx packages/**/src/**/**/*.{js,jsx} --fix",
-    "lint:scss": "stylelint \"packages/**/src/**/**/*.{css,scss}\" --syntax=scss --fix",
-    "format": "npm-run-all format:js:jsx format:scss",
-    "format:js:jsx": "prettier --write \"packages/**/src/**/**/*.{js,jsx}\"",
-    "format:scss": "prettier --write \"packages/**/src/**/**/*.{css,scss}\"",
+    "lint": "npm-run-all lint:js",
+    "lint:js": "eslint --ext .js packages/**/src/**/**/*.js --fix",
+    "format": "npm-run-all format:js",
+    "format:js": "prettier --write \"packages/**/src/**/**/*.js\"",
     "test": "jest -u --no-cache --silent --runInBand --coverage",
     "test:coverage": "jest --coverage --silent",
-    "report-coverage": "codecov",
-    "build": "lerna run build --stream"
+    "report-coverage": "codecov"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -82,10 +79,7 @@
     "react-test-renderer": "^16.10.2",
     "regenerator-runtime": "^0.13.3",
     "sass-loader": "^8.0.0",
-    "style-loader": "^1.0.0",
-    "stylelint": "^11.1.1",
-    "stylelint-config-standard": "^19.0.0",
-    "stylelint-order": "^3.1.1"
+    "style-loader": "^1.0.0"
   },
   "dependencies": {
     "husky": "^3.0.9",
