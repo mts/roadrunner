@@ -20,7 +20,7 @@
     "lint": "npm-run-all lint:js:jsx",
     "lint:js:jsx": "eslint --ext .js --ext .jsx src/ --fix",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "ci": "npm-run-all lint:format build test"
+    "bootstrap": "npm-run-all lint:format build test"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
