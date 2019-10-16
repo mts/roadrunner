@@ -1,13 +1,25 @@
+# MacOS
 .DS_Store
-package-lock.json
+
+# Sublime Text
 app.sublime-project
 app.sublime-workspace
+
+# Test
+coverage
+
+# NPM Papillon
+.npmrc
+npm-debug.log
+lerna-debug.log
+package-lock.json
 node_modules
 
-packages/mdn/.DS_Store
+# NPM Papillon Explorer Package
 packages/mdn/package-lock.json
-packages/mdn/npm-debug.log
-packages/mdn/.npmrc
 packages/mdn/build
 packages/mdn/node_modules
-packages/mdn/coverage
+
+packages/rxjs/package-lock.json
+packages/rxjs/build
+packages/rxjs/node_modules
