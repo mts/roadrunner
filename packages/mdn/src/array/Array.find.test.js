@@ -2,9 +2,9 @@
 
 describe('Array', () => {
   test('find()', () => {
-    var array1 = [5, 12, 8, 130, 44]
+    const array1 = [5, 12, 8, 130, 44]
 
-    var found = array1.find(function(element) {
+    const found = array1.find(function(element) {
       return element > 10
     })
 

@@ -2,7 +2,7 @@
 
 describe('Array', () => {
   test('join()', () => {
-    var elements = ['Fire', 'Wind', 'Rain']
+    const elements = ['Fire', 'Wind', 'Rain']
 
     expect(elements.join()).toEqual('Fire,Wind,Rain')
     expect(elements.join('')).toEqual('FireWindRain')

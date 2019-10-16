@@ -2,9 +2,9 @@
 
 describe('Array', () => {
   test('entries()', () => {
-    var array1 = ['a', 'b', 'c']
+    const array1 = ['a', 'b', 'c']
 
-    var iterator1 = array1.entries()
+    const iterator1 = array1.entries()
 
     expect(iterator1.next().value).toEqual([0, 'a'])
     expect(iterator1.next().value).toEqual([1, 'b'])

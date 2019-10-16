@@ -2,7 +2,7 @@
 
 describe('Array', () => {
   test('push()', () => {
-    var animals = ['pigs', 'goats', 'sheep']
+    const animals = ['pigs', 'goats', 'sheep']
 
     expect(animals.push('cows')).toEqual(4)
     expect(animals).toEqual(['pigs', 'goats', 'sheep', 'cows'])

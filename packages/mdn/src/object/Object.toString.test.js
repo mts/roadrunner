@@ -6,10 +6,10 @@ describe('Object', () => {
       this.name = name
     }
 
-    var dog1 = new Dog('Gabby')
+    const dog1 = new Dog('Gabby')
 
     Dog.prototype.toString = function dogToString() {
-      return '' + this.name
+      return `${this.name}`
     }
 
     expect(dog1.toString()).toEqual('Gabby')

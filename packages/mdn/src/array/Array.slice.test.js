@@ -2,7 +2,7 @@
 
 describe('Array', () => {
   test('slice()', () => {
-    var animals = ['ant', 'bison', 'camel', 'duck', 'elephant']
+    const animals = ['ant', 'bison', 'camel', 'duck', 'elephant']
 
     expect(animals.slice(2)).toEqual(['camel', 'duck', 'elephant'])
     expect(animals.slice(2, 4)).toEqual(['camel', 'duck'])

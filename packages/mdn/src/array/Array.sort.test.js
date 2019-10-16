@@ -2,8 +2,8 @@
 
 describe('Array', () => {
   test('sort()', () => {
-    var months = ['March', 'Jan', 'Feb', 'Dec']
-    var array1 = [1, 30, 4, 21, 100000]
+    const months = ['March', 'Jan', 'Feb', 'Dec']
+    const array1 = [1, 30, 4, 21, 100000]
 
     expect(months.sort()).toEqual(['Dec', 'Feb', 'Jan', 'March'])
     expect(array1.sort()).toEqual([1, 100000, 21, 30, 4])

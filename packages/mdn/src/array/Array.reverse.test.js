@@ -2,9 +2,9 @@
 
 describe('Array', () => {
   test('reverse()', () => {
-    var array1 = ['one', 'two', 'three']
+    const array1 = ['one', 'two', 'three']
 
-    var reversed = array1.reverse()
+    const reversed = array1.reverse()
 
     expect(reversed).toEqual(['three', 'two', 'one'])
     expect(array1).toEqual(['three', 'two', 'one'])

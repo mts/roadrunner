@@ -15,10 +15,10 @@ describe('Array', () => {
   })
 
   test('keys()', () => {
-    var array1 = ['a', 'b', 'c']
-    var iterator = array1.keys()
+    const array1 = ['a', 'b', 'c']
+    const iterator = array1.keys()
 
-    for (let key of iterator) {
+    for (const key of iterator) {
       console.log(key)
     }
 

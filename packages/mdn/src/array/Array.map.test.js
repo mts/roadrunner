@@ -2,7 +2,7 @@
 
 describe('Array', () => {
   test('map()', () => {
-    var array1 = [1, 4, 9, 16]
+    const array1 = [1, 4, 9, 16]
 
     const map1 = array1.map(x => x * 2)
     expect(map1).toEqual([2, 8, 18, 32])

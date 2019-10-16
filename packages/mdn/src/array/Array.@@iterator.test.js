@@ -15,10 +15,10 @@ describe('Array', () => {
   })
 
   test('@@iterator()', () => {
-    var arr = ['a', 'b', 'c', 'd', 'e']
-    var eArr = arr[Symbol.iterator]()
+    const arr = ['a', 'b', 'c', 'd', 'e']
+    const eArr = arr[Symbol.iterator]()
 
-    for (let letter of eArr) {
+    for (const letter of eArr) {
       console.log(letter)
     }
 

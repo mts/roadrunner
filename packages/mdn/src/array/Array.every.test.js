@@ -6,7 +6,7 @@ describe('Array', () => {
       return currentValue < 40
     }
 
-    var array1 = [1, 30, 39, 29, 10, 13]
+    const array1 = [1, 30, 39, 29, 10, 13]
 
     expect(array1.every(isBelowThreshold)).toEqual(true)
   })

@@ -17,7 +17,7 @@ describe('Object', () => {
   test('create()', () => {
     const person = {
       isHuman: false,
-      printIntroduction: function() {
+      printIntroduction() {
         console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`)
       },
     }

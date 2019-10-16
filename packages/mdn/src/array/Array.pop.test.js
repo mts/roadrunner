@@ -2,7 +2,7 @@
 
 describe('Array', () => {
   test('pop()', () => {
-    var plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato']
+    const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato']
 
     expect(plants.pop()).toEqual('tomato')
     expect(plants).toEqual(['broccoli', 'cauliflower', 'cabbage', 'kale'])

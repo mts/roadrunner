@@ -2,9 +2,9 @@
 
 describe('Array', () => {
   test('shift()', () => {
-    var array1 = [1, 2, 3]
+    const array1 = [1, 2, 3]
 
-    var firstElement = array1.shift()
+    const firstElement = array1.shift()
 
     expect(array1).toEqual([2, 3])
     expect(firstElement).toEqual(1)

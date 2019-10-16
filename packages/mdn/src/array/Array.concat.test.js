@@ -2,8 +2,8 @@
 
 describe('Array', () => {
   test('concat()', () => {
-    var array1 = ['a', 'b', 'c']
-    var array2 = ['d', 'e', 'f']
+    const array1 = ['a', 'b', 'c']
+    const array2 = ['d', 'e', 'f']
 
     expect(array1.concat(array2)).toEqual(['a', 'b', 'c', 'd', 'e', 'f'])
   })

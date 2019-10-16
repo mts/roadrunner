@@ -2,7 +2,7 @@
 
 describe('Array', () => {
   test('splice()', () => {
-    var months = ['Jan', 'March', 'April', 'June']
+    const months = ['Jan', 'March', 'April', 'June']
 
     months.splice(1, 0, 'Feb')
     expect(months).toEqual(['Jan', 'Feb', 'March', 'April', 'June'])

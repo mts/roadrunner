@@ -2,7 +2,7 @@
 
 describe('Array', () => {
   test('findIndex()', () => {
-    var array1 = [5, 12, 8, 130, 44]
+    const array1 = [5, 12, 8, 130, 44]
 
     function isLargeNumber(element) {
       return element > 13

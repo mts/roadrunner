@@ -2,9 +2,9 @@
 
 describe('Array', () => {
   test('some()', () => {
-    var array = [1, 2, 3, 4, 5]
+    const array = [1, 2, 3, 4, 5]
 
-    var even = function(element) {
+    const even = function(element) {
       return element % 2 === 0
     }
 

@@ -2,8 +2,8 @@
 
 describe('Object', () => {
   test('is()', () => {
-    var foo = { a: 1 }
-    var bar = { a: 1 }
+    const foo = { a: 1 }
+    const bar = { a: 1 }
 
     expect(Object.is('foo', 'foo')).toEqual(true)
     expect(Object.is(window, window)).toEqual(true)

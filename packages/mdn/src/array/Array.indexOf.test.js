@@ -2,7 +2,7 @@
 
 describe('Array', () => {
   test('indexOf()', () => {
-    var beasts = ['ant', 'bison', 'camel', 'duck', 'bison']
+    const beasts = ['ant', 'bison', 'camel', 'duck', 'bison']
 
     expect(beasts.indexOf('bison')).toEqual(1)
     expect(beasts.indexOf('bison', 2)).toEqual(4)
