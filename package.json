@@ -1,19 +1,11 @@
 {
   "name": "roadrunner",
-  "description": "Roadrunner",
-  "repository": "https://github.com/mts/roadrunner",
+  "description": "Roadrunner Testing Showcase",
+  "homepage": "https://github.com/mts/roadrunner/#readme",
   "license": "MIT",
-  "lint-staged": {
-    "packages/src/**/*.{js,jsx,json}": [
-      "eslint --ext .js --ext .jsx packages/src/ --fix",
-      "prettier --write \"packages/src/**/*.{js,jsx}\"",
-      "git add"
-    ],
-    "packages/src/**/*.{css,scss}": [
-      "stylelint \"packages/src/**/*.{css,scss}\" --syntax=scss --fix",
-      "prettier --write \"packages/src/**/*.{css,scss}\"",
-      "git add"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mts/roadrunner.git"
   },
   "scripts": {
     "build": "lerna run build --stream",
