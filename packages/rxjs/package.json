@@ -1,9 +1,25 @@
 {
   "name": "roadrunner-rxjs",
-  "version": "0.0.0",
   "description": "Roadrunner RxJS",
-  "main": "index.js",
+  "homepage": "https://github.com/mts/roadrunner/#readme",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mts/roadrunner.git",
+    "directory": "packages/rxjs"
+  },
+  "version": "0.0.0",
+  "main": "index.js",
+  "files": [
+    "build"
+  ],
+  "keywords": [
+    "roadrunner rxjs"
+  ],
+  "author": {
+    "name": "MTS",
+    "url": "https://github.com/mts"
+  },
   "scripts": {
     "start": "nodemon --watch src/index.js --exec \"npm run build && node build/index.js\"",
     "prebuild": "rimraf build",
