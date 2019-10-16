@@ -28,15 +28,7 @@
     "uninstall-packages": "rm -rf node_modules package-lock.json",
     "install-packages": "npm install",
     "reinstall-packages": "npm-run-all uninstall-packages install-packages",
-    "npm-update": "npm update",
-    "test": "jest -u --config jest.config.json --no-cache --silent --runInBand",
-    "test:watchChanged:silent": "jest -u --config jest.config.json --watch --onlyChanged --verbose",
-    "test:coverage": "jest --config jest.config.json --coverage --collectCoverageFrom=src/**/*.{js,jsx} --silent",
-    "lint:format": "npm-run-all lint format",
-    "lint": "npm-run-all lint:js:jsx",
-    "lint:js:jsx": "eslint --ext .js --ext .jsx src/ --fix",
-    "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "bootstrap": "npm-run-all lint:format build test"
+    "npm-update": "npm update"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
