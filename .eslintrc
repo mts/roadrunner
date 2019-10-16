@@ -29,17 +29,16 @@
     "jsdom": true,
     "document": false,
     "expect": false,
-    "jest": false,
-    "renderShallow": false,
-    "renderMount": false
-  },
-   "settings": {
-    "react": {
-      "version": "16.10.2"
-    }
+    "jest": false
   },
   "rules": {
     "no-prototype-builtins": 0,
-    "no-unused-vars": 0
+    "no-unused-vars": 0,
+    "func-names": 0,
+    "no-array-constructor": 0,
+    "no-new-object": 0,
+    "new-cap": 0,
+    "prefer-promise-reject-errors": 0,
+    "no-restricted-syntax": 0,
   }
 }
