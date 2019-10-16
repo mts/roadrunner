@@ -2,10 +2,10 @@
 
 describe('Array', () => {
   test('filter()', () => {
-    var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+    var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present']
 
-    const result = words.filter(word => word.length > 6);
+    const result = words.filter(word => word.length > 6)
 
-    expect(result).toEqual(["exuberant", "destruction", "present"])
+    expect(result).toEqual(['exuberant', 'destruction', 'present'])
   })
 })

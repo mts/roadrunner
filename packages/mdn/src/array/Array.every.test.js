@@ -3,10 +3,10 @@
 describe('Array', () => {
   test('every()', () => {
     function isBelowThreshold(currentValue) {
-      return currentValue < 40;
+      return currentValue < 40
     }
 
-    var array1 = [1, 30, 39, 29, 10, 13];
+    var array1 = [1, 30, 39, 29, 10, 13]
 
     expect(array1.every(isBelowThreshold)).toEqual(true)
   })

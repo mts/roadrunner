@@ -1,5 +1,4 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty
-/* eslint-disable no-prototype-builtins */
 
 describe('Object', () => {
   test('hasOwnProperty()', () => {
@@ -11,4 +10,3 @@ describe('Object', () => {
     expect(object1.hasOwnProperty('hasOwnProperty')).toEqual(false)
   })
 })
-/* eslint-enable no-prototype-builtins */
