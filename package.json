@@ -14,15 +14,14 @@
     "install-packages": "lerna run install-packages --stream",
     "reinstall-packages": "lerna run reinstall-packages --stream",
     "npm-update": "lerna run npm-update",
-    "bootstrap": "npm-run-all build lint:format test report-coverage",
+    "bootstrap": "npm-run-all build lint:format test",
     "lint:format": "npm-run-all lint format",
     "lint": "npm-run-all lint:js",
-    "lint:js": "eslint --ext .js packages/**/src/**/**/*.js --fix",
+    "lint:js": "eslint --ext .js packages/**/src/**/*.test.js --fix",
     "format": "npm-run-all format:js",
-    "format:js": "prettier --write \"packages/**/src/**/**/*.js\"",
-    "test": "jest -u --no-cache --silent --runInBand --coverage",
-    "test:coverage": "jest --coverage --silent",
-    "report-coverage": "codecov"
+    "format:js": "prettier --write \"packages/**/src/**/*.test.js\"",
+    "test": "jest -u --no-cache --silent",
+    "test:coverage": "jest --coverage --silent"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -40,7 +39,6 @@
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-plugin-syntax-async-functions": "^6.13.0",
-    "codecov": "^3.6.1",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.4.0",
