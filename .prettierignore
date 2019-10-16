@@ -1,7 +1,7 @@
 .DS_Store
 package-lock.json
-roadrunner.sublime-project
-roadrunner.sublime-workspace
+app.sublime-project
+app.sublime-workspace
 node_modules
 
 packages/mdn/.DS_Store
