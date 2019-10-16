@@ -1,28 +1,47 @@
 {
   "parser": "babel-eslint",
-  "env": {
-    "browser": true,
-    "commonjs": true,
-    "es6": true,
-    "node": true,
-    "jest": true
-  },
-  "settings": {
-    "react": {
-      "version": "16.8.6"
-    }
-  },
-  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:jsx-a11y/recommended", "plugin:jest/recommended"],
   "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
-    },
-    "ecmaVersion": 2018,
-    "sourceType": "module"
+    }
   },
-  "plugins": ["react", "jsx-a11y"],
+  "plugins": ["react", "react-hooks", "jsx-a11y", "jest", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:jest/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "commonjs": true,
+    "mocha": true,
+    "jasmine": true,
+    "jest": true,
+    "amd": true
+  },
+  "globals": {
+    "jsdom": true,
+    "document": false,
+    "expect": false,
+    "jest": false,
+    "renderShallow": false,
+    "renderMount": false
+  },
+   "settings": {
+    "react": {
+      "version": "16.10.2"
+    }
+  },
   "rules": {
-    "react/display-name": 0,
     "no-prototype-builtins": 0,
     "no-unused-vars": 0
   }
