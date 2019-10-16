@@ -4,16 +4,11 @@
     "ecmaVersion": 2019,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "jsx-a11y", "jest", "prettier"],
+  "plugins": ["jest", "prettier"],
   "extends": [
     "eslint:recommended",
-    "airbnb",
-    "airbnb/hooks",
-    "plugin:react/recommended",
-    "plugin:jsx-a11y/recommended",
     "plugin:jest/recommended",
-    "prettier",
-    "prettier/react"
+    "prettier"
   ],
   "env": {
     "es6": true,
