@@ -1,7 +1,7 @@
 {
-  "packages/**/src/**/**/*.js": [
-    "eslint --ext .js packages/**/src/**/**/*.js --fix",
-    "prettier --write \"packages/**/src/**/**/*.js\"",
+  "packages/**/src/**/*.test.js": [
+    "eslint --ext .js packages/**/src/**/*.test.js --fix",
+    "prettier --write \"packages/**/src/**/*.test.js\"",
     "git add"
   ]
 }
